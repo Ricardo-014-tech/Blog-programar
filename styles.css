@@ -1,5 +1,4 @@
-/* Estilo global */
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -197,5 +196,9 @@ form button {
 
     .social-icons a {
         font-size: 1.3rem;
+    }
+
+    .pix-info {
+        padding: 15px;
     }
 }
