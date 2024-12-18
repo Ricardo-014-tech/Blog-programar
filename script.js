@@ -1,5 +1,11 @@
-// Efeito de scroll para mostrar as seções quando aparecerem na tela
 document.addEventListener("DOMContentLoaded", function () {
+    // Carregar a configuração do modo do localStorage
+    const savedMode = localStorage.getItem('mode');
+    if (savedMode === 'night') {
+        document.body.classList.add('night-mode');
+    }
+
+    // Efeito de scroll para mostrar as seções quando aparecerem na tela
     const sections = document.querySelectorAll("section");
     const options = {
         threshold: 0.2
@@ -39,17 +45,14 @@ document.addEventListener("DOMContentLoaded", function () {
             behavior: "smooth"
         });
     });
+
+    // Função para alternar entre modo claro e modo noturno
+    const modeToggleButton = document.querySelector('.toggle-mode');
+    if (modeToggleButton) {
+        modeToggleButton.addEventListener('click', function () {
+            document.body.classList.toggle('night-mode');
+            const currentMode = document.body.classList.contains('night-mode') ? 'night' : 'light';
+            localStorage.setItem('mode', currentMode);
+        });
+    }
 });
-
-// Função para copiar a chave Pix
-function copyPixKey() {
-    const pixKey = document.querySelector(".pix-key").textContent;
-    navigator.clipboard.writeText(pixKey).then(() => {
-        alert("Chave Pix copiada para a área de transferência!");
-    }).catch(err => {
-        alert("Erro ao copiar a chave Pix.");
-    });
-}
-
-
-
