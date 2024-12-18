@@ -50,3 +50,6 @@ function copyPixKey() {
         alert("Erro ao copiar a chave Pix.");
     });
 }
+
+
+
