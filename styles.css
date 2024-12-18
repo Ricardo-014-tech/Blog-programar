@@ -53,6 +53,14 @@ section p {
     color: #b0b0b0;
 }
 
+section ul {
+    margin-top: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
 /* Efeito de transição */
 section.visible {
     opacity: 1;
@@ -224,24 +232,4 @@ body.night-mode form textarea {
     .social-icons a {
         font-size: 1.3rem;
     }
-}
-
-/* Botão flutuante de alternância de modo */
-.toggle-mode {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #00bcd4;
-    color: white;
-    padding: 10px;
-    border-radius: 50%;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    z-index: 1000;
-}
-
-.toggle-mode:hover {
-    background-color: #007c91;
 }
