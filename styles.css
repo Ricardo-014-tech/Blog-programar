@@ -202,3 +202,22 @@ form button {
         padding: 15px;
     }
 }
+/* Rodapé */
+footer {
+    background-color: #1a1a1a;
+    color: #b0b0b0;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+footer strong {
+    color: #00bcd4;
+}
