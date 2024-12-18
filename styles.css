@@ -1,3 +1,4 @@
+/* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +8,8 @@
 
 /* Corpo da página */
 body {
-    background: #0a0a0a;
-    color: #e0e0e0;
+    background: #fff;
+    color: #333;
     font-size: 16px;
     line-height: 1.6;
 }
@@ -50,14 +51,6 @@ section h2 {
 section p {
     font-size: 1.1rem;
     color: #b0b0b0;
-}
-
-section ul {
-    margin-top: 20px;
-}
-
-section ul li {
-    margin-bottom: 10px;
 }
 
 /* Efeito de transição */
@@ -172,6 +165,40 @@ form button {
     background-color: #007c91;
 }
 
+/* Modo Noturno */
+body.night-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.night-mode header {
+    background: linear-gradient(45deg, #007c91, #4caf50);
+}
+
+body.night-mode section {
+    background: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.night-mode button {
+    background-color: #4caf50;
+    color: white;
+}
+
+body.night-mode .scroll-to-top {
+    background-color: #4caf50;
+}
+
+body.night-mode .social-icons a {
+    color: #4caf50;
+}
+
+body.night-mode form input,
+body.night-mode form textarea {
+    background: #333;
+    border: 1px solid #444;
+}
+
 /* Responsividade */
 @media screen and (max-width: 768px) {
     header .logo h1 {
@@ -197,27 +224,24 @@ form button {
     .social-icons a {
         font-size: 1.3rem;
     }
-
-    .pix-info {
-        padding: 15px;
-    }
-}
-/* Rodapé */
-footer {
-    background-color: #1a1a1a;
-    color: #b0b0b0;
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
-footer p {
-    font-size: 1rem;
-    margin: 0;
+/* Botão flutuante de alternância de modo */
+.toggle-mode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
 }
 
-footer strong {
-    color: #00bcd4;
+.toggle-mode:hover {
+    background-color: #007c91;
 }
