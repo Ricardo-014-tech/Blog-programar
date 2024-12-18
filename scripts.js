@@ -16,6 +16,29 @@ document.addEventListener("DOMContentLoaded", function () {
     sections.forEach(section => {
         observer.observe(section);
     });
+
+    // Adicionando o efeito para o botão "Voltar ao Topo"
+    const scrollToTopBtn = document.createElement("button");
+    scrollToTopBtn.classList.add("scroll-to-top");
+    scrollToTopBtn.textContent = "↑";
+    document.body.appendChild(scrollToTopBtn);
+
+    // Mostrar/Ocultar o botão "Voltar ao Topo"
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 200) {
+            scrollToTopBtn.style.display = "block"; // Mostrar o botão
+        } else {
+            scrollToTopBtn.style.display = "none"; // Ocultar o botão
+        }
+    });
+
+    // Função para rolar para o topo
+    scrollToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
 });
 
 // Função para copiar a chave Pix
