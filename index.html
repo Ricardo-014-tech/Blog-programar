@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Programação</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Blog de Programação</h1>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>Sobre o Blog</h2>
+        <p>Este blog compartilha artigos e recursos sobre programação, com foco em web development, tecnologias emergentes e dicas para quem deseja iniciar na área.</p>
+    </section>
+
+    <section id="backend">
+        <h2>O que é Back-End?</h2>
+        <p>O Back-End é a parte do desenvolvimento de software que lida com a lógica do lado do servidor. Ao contrário do Front-End, que é responsável pela interface do usuário, o Back-End trata do armazenamento e da manipulação de dados, a comunicação entre servidores e a execução de processos de negócios.</p>
+        <ul>
+            <li>JavaScript (Node.js)</li>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>PHP</li>
+            <li>Java</li>
+            <li>C#</li>
+        </ul>
+    </section>
+
+    <section id="frontend">
+        <h2>O que é Front-End?</h2>
+        <p>O Front-End é a parte do desenvolvimento de software que lida com a interface do usuário (UI) e a experiência do usuário (UX). Ele é responsável por tudo o que o usuário vê e interage diretamente na aplicação.</p>
+        <p>Os desenvolvedores de Front-End utilizam linguagens como HTML, CSS e JavaScript, e frameworks como React, Angular e Vue.js para criar sites e aplicativos responsivos e interativos.</p>
+    </section>
+
+    <section id="fullstack">
+        <h2>O que é Full-Stack?</h2>
+        <p>O Full-Stack é um termo usado para descrever desenvolvedores que trabalham tanto no Front-End quanto no Back-End, ou seja, em todas as camadas de uma aplicação. Isso permite que o desenvolvedor crie um sistema completo, do início ao fim.</p>
+    </section>
+
+    <section id="devops">
+        <h2>O que é DevOps?</h2>
+        <p>DevOps é uma prática que combina desenvolvimento de software (Dev) e operações de TI (Ops). O objetivo é melhorar a colaboração entre essas duas áreas e automatizar processos para permitir lançamentos mais rápidos e seguros.</p>
+    </section>
+
+    <section id="support">
+        <h2>Apoie o Projeto</h2>
+        <p>O apoio é essencial para melhorar cada vez mais o conteúdo do blog. Você pode contribuir via Pix, e toda ajuda será usada para melhorar o projeto.</p>
+        <div class="pix-info">
+            <h3>Chave Pix: <span class="pix-key">752fca67-7381-4b6f-b4ad-60b8bddc4c8f</span></h3>
+            <button onclick="copyPixKey()">Copiar Chave Pix</button>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Depoimentos</h2>
+        <div class="testimonial">
+            <p>"Este blog tem sido essencial para meu aprendizado. As dicas são muito práticas e diretas!"</p>
+            <span>- João Silva, Desenvolvedor</span>
+        </div>
+        <div class="testimonial">
+            <p>"Adoro os artigos sobre as tecnologias emergentes. O conteúdo é de fácil compreensão e muito relevante!"</p>
+            <span>- Maria Oliveira, Estudante</span>
+        </div>
+    </section>
+
+    <section id="resources">
+        <h2>Recursos Úteis</h2>
+        <ul>
+            <li><a href="https://codepen.io" target="_blank">CodePen</a></li>
+            <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://github.com" target="_blank">GitHub</a></li>
+        </ul>
+    </section>
+
+    <section id="social">
+        <h2>Conecte-se comigo!</h2>
+        <div class="social-icons">
+            <a href="mailto:ricardosilvacastro134@gmail.com" target="_blank">Email</a>
+            <a href="https://www.instagram.com/si1va_rs/" target="_blank">Instagram</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <form action="https://formspree.io/f/mnnqkwvp" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
